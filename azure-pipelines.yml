@@ -5,7 +5,7 @@ variables:
   serviceConnectionToAzure: functARM
   # the name of your web app here is the same one you used above
   # when you created the web app using the Azure CLI
-  appName: rajkfunc-app-name
+  appName: rajk-func-name
   
 # Maven
 # Build your Java project and run tests with Apache Maven.
