@@ -42,7 +42,9 @@ steps:
     sqMavenPluginVersionChoice: 'latest'
 # add these as the last steps
 # to deploy to your app service
-
+- task: SonarQubePublish@4
+  inputs:
+    pollingTimeoutSec: '300'
 - task: CopyFiles@2
   displayName: Copy Files
   inputs:
