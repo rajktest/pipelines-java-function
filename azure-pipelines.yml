@@ -31,6 +31,12 @@ steps:
     goals: 'package'
 # add these as the last steps
 # to deploy to your app service
+
+- task: SonarQubePrepare@4
+  inputs:
+    SonarQube: 'sonarube'
+    scannerMode: 'Other'
+
 - task: CopyFiles@2
   displayName: Copy Files
   inputs:
